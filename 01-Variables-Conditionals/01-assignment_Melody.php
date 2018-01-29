@@ -64,7 +64,7 @@ writeMsg();
 <?php
 $number = date("H");
 
-if ($number < "3") {
+if ($number < 3) {
     echo "Have a good day!";
 }
 ?>
