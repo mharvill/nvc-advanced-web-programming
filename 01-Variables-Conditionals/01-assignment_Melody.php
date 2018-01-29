@@ -10,12 +10,16 @@ $number = 8;
 
 // 03. Create and use a boolean variable
 
+$GoodDay = true;
+
+$BadDay = false;
 
 // 04. Create and call one or more function(s)
 // placed in the body (hello world)
 
 
 // 05. Basic conditional statement
+//in body
 
 
 $pets = [
@@ -27,6 +31,8 @@ $pets = [
 ];
 
 $selectedpets = $pets[(1)];
+
+
 
 ?>
 
@@ -54,6 +60,14 @@ writeMsg();
 <?php echo "My favorite pet I own is " .$selectedpets?>;
 
 <?php echo "How many pets do I have?: " .$number?>
+
+<?php
+$number = date("H");
+
+if ($number < "3") {
+    echo "Have a good day!";
+}
+?>
 
 </body>
 </html>
