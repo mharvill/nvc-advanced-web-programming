@@ -10,16 +10,18 @@ $number = 8;
 
 // 03. Create and use a boolean variable
 
-$
 
 // 04. Create and call one or more function(s)
+// placed in the body (hello world)
 
+
+// 05. Basic conditional statement
 
 
 $pets = [
 
 "Dogs",
-"a snake",
+"a snake.",
 "Budgies"
 
 ];
@@ -36,9 +38,18 @@ $selectedpets = $pets[(1)];
 </head
 <body>
 
-<h1> <?php echo $title; ?> </h1>
 
-<h4><?php echo "<p> Hello World </p>"; ?></h4>
+<h1><?php
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg();
+?></h1>
+
+<h2> <?php echo $title; ?> </h2>
+
+<h4><?php echo "<p> Melody Harvill </p>"; ?></h4>
 
 <?php echo "My favorite pet I own is " .$selectedpets?>;
 
