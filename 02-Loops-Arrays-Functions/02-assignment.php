@@ -43,22 +43,34 @@ $number++;
 
 }
 
+echo "<br>";
 
 // 04. Create an Array
 
-$siblings["Michael", "Michaela", "Deana", "McCaleb"];
+//Didn't put the brackets because I kept getting an error that had something to do with the comma instead of a closing bracket. It worked for some reason this way. 
 
-echo "My favorite siblings are" .$siblings[1]. "and" .$siblings[2]. ".";
+$siblings = array("Michael", "Michaela", "Deana", "McCaleb");
 
-<br>
-<br>
+echo "<p>My favorite siblings are " .$siblings[1]. " and " .$siblings[2]. ".</p>";
 
-echo "Just kidding...";
 
+
+echo "<p>Just kidding...</p>";
+
+echo "<br>";
 
 // 05. Sort an Array
 
+echo "<p>Ranked from oldest to youngest is:</p>";
 
+$siblings = array("Me", "Michael", "Michaela", "Deana", "McCaleb");
+asort($siblings);
+
+$clength = count($siblings);
+for($x = 0; $x < $clength; $x++) {
+    echo $siblings[$x];
+    echo "<br>";
+}
 
 
 
