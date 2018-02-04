@@ -73,10 +73,23 @@ for($x = 0; $x < $clength; $x++) {
 }
 
 
-
 // 01. Create a Switch Statement
+echo "<br>";
+$question = "Yes";
 
+switch ($question) {
 
+	case "Yes":
+	echo "<p>This page is too long!</p>";
+
+break;
+
+	case "No":
+	echo "This page is not long enough!";
+
+	default: 
+	echo "I don't care about the length of the page!";
+}
 
 
 
